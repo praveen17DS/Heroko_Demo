@@ -7,7 +7,7 @@ Created on Thu Apr 23 16:15:06 2020
 
 import cx_Oracle
 import pandas as pd
-conn=cx_Oracle.connect("Hospital","care#1234","TESTDB")
+conn=cx_Oracle.connect("xxxxxxx","xxxxxxx","xxxxxxx")
 querry="SELECT * FROM pharma_sales_master WHERE ROWNUM <= 1000"
 df1=pd.read_sql_query(querry,conn)
 
