@@ -1,0 +1,36 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Apr 23 12:43:28 2020
+
+@author: 100293
+"""
+
+<!DOCTTYPE html>
+<html>
+
+<head>
+  
+</head>
+
+<body>
+  <div class="login">
+    <h1>Macare_data_analysis</h1>
+    
+    <form action="{{ url_for('predict')}}"method="post">
+    <input type="text" name="BRANCH_ID" placeholder="BRANCH_ID" required="required"/>
+
+    <button type="submit" class="btn btn-primary btn_block btn_large">Count</button>
+ </form>
+ 
+ <br>
+ <br>
+ {{prediction_text}}
+ 
+ </div>
+ 
+ </body>
+ </html>   
+
+
+
+
